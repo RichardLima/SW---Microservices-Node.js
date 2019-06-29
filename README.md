@@ -5,7 +5,7 @@ Este projeto é composto por uma API Gateway e dois microsserviços, sendo um de
 
 ## Requisitos
 
-Fazer o clone e rodar os comandos abaixo em cada serviço (API Gateway e microsserviços).
+Fazer o clone e rodar o comando abaixo em cada serviço (API Gateway e microsserviços).
 
 ```bash
 npm install
@@ -17,24 +17,32 @@ Para testar os serviços basta dar o start utilizando o comando `npm start`.
 
 ## Serviço para pegar o token
 
-**GET**
+**POST**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/login`
-ex: url/login
+ex: `url/login`
+
+**body**
+`
+{
+    "user": "aluno",
+    "pass": "ifsul"
+}
+`
 
 ## Serviço de listagem de gêneros
 
 **GET**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/generos`
-ex: url/generos
+ex: `url/generos`
 
 ## Serviço de busca/listagem de um gênero específico
 
 **GET**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/genero/:id`
-ex: url/genero/1
+ex: `url/genero/1`
 
 ## Serviço para cadastro/inserção de um gênero específico
 
@@ -42,7 +50,7 @@ ex: url/genero/1
 
 Para utilizar esse serviço você deve estar autenticado e utilizar o endpoint
 `/generos`
-ex: url/generos
+ex: `url/generos`
 
 **body**
 `
@@ -57,7 +65,7 @@ ex: url/generos
 
 Para utilizar esse serviço você deve estar autenticado e utilizar o endpoint
 `/generos/:id`
-ex: url/generos/1
+ex: `url/generos/1`
 
 **body**
 `
@@ -70,21 +78,21 @@ ex: url/generos/1
 **DELETE**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/generos/:id`
-ex: url/generos/1
+ex: `url/generos/1`
 
 ## Serviço de listagem de livros
 
 **GET**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/livros`
-ex: url/livros
+ex: `url/livros`
 
 ## Serviço de busca/listagem de um livro específico
 
 **GET**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/livro/:id`
-ex: url/livro/1
+ex: `url/livro/1`
 
 ## Serviço para cadastro/inserção de um livro específico
 
@@ -92,7 +100,7 @@ ex: url/livro/1
 
 Para utilizar esse serviço você deve estar autenticado e utilizar o endpoint
 `/livros`
-ex: url/livros
+ex: `url/livros`
 
 **body**
 `
@@ -108,7 +116,7 @@ ex: url/livros
 
 Para utilizar esse serviço você deve estar autenticado e utilizar o endpoint
 `/livros/:id`
-ex: url/livros/1
+ex: `url/livros/1`
 
 **body**
 `
@@ -123,8 +131,20 @@ ex: url/livros/1
 **DELETE**
 
 Para utilizar esse serviço você deve utilizar o endpoint `/livros/:id`
-ex: url/livros/1
+ex: `url/livros/1`
 
+
+## Serviços hospedados no HEROKU
+
+API Gateway: `https://dry-shore-68374.herokuapp.com`
+
+Microserviço de gênero: `https://quiet-ridge-43669.herokuapp.com` 
+para utilizar os endpoints de gênero deverá ser acrescentado `/api` 
+ex: `https://quiet-ridge-43669.herokuapp.com/api/generos` 
+
+Microserviço de livro: `https://evening-wildwood-94250.herokuapp.com` 
+para utilizar os endpoints de gênero deverá ser acrescentado `/api` 
+ex: `https://evening-wildwood-94250.herokuapp.com/api/generos` 
 
 
 
