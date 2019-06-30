@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "d8313f3b-b52d-4c5a-9109-1d29f8635eec",
+		"name": "Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Generos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/generos",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"generos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Genero",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/genero/1",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"genero",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Genero",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"genero3\"\n}"
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/generos",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"generos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Genero",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"generoPUT\"\n}"
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/generos/2",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"generos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Genero",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/generos/2",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"generos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Livros",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/livros",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Livro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/livro/1",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"livro",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Livro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"genero3\",\n    \"genero\": 2\n}"
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/livros",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Livro",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"livroAtualizado\",\n    \"genero\": 3\n}"
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/livros/1",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"livros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Livro",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/livros/2",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"livros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"aluno\",\n    \"pass\": \"ifsul\"\n}"
+				},
+				"url": {
+					"raw": "https://dry-shore-68374.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dry-shore-68374",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
